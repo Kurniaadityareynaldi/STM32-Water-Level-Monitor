@@ -4,6 +4,8 @@ ADC-based liquid level measurement system using **STM32**, **SSD1306 OLED**, and
 
 This project is developed as an embedded monitoring system for measuring and displaying liquid level information using an STM32 microcontroller.
 
+> **Note:** This project is shared for learning purposes. It is licensed under the **GNU GPL v3** because it includes a third-party SSD1306 display driver released under that license — see the [License](#license) and [Third-Party Components](#third-party-components) sections below.
+
 ## Features
 
 * ADC-based liquid level measurement
@@ -21,12 +23,12 @@ This project is developed as an embedded monitoring system for measuring and dis
 
 | Component               | Description        |
 | ----------------------- | ------------------ |
-| Microcontroller         | STM32              |
-| Display                 | SSD1306 OLED       |
-| ADC                     | STM32 Internal ADC |
-| Communication           | I2C                |
-| Programming Environment | STM32CubeIDE       |
-| Firmware Library        | STM32 HAL          |
+| Microcontroller         | STM32               |
+| Display                 | SSD1306 OLED        |
+| ADC                     | STM32 Internal ADC  |
+| Communication           | I2C                 |
+| Programming Environment | STM32CubeIDE        |
+| Firmware Library        | STM32 HAL           |
 
 ## System Overview
 
@@ -197,6 +199,17 @@ Possible improvements include:
 * IoT connectivity
 * Improved modular firmware architecture
 
+## Third-Party Components
+
+This project uses a modified SSD1306 OLED display driver (`Drivers/SSD1306/ssd1306.c`, `ssd1306.h`, `fonts.c`, `fonts.h`) originally written by:
+
+* **Tilen Majerle** ([tilen@majerle.eu](mailto:tilen@majerle.eu)) — original author
+* **Alexander Lutsai** ([s.lyra@ya.ru](mailto:s.lyra@ya.ru)) — STM32F10x port/modification
+
+These files are licensed under the **GNU General Public License v3 (or later)**, as stated in their original file headers. They have been lightly reformatted (indentation, comments, dead-code removal) for this project, but the license and attribution have been kept intact, as required by the GPL.
+
+Because this driver is compiled together with the rest of the firmware into a single combined work, **the whole project is distributed under GPL v3** — see [License](#license) below.
+
 ## Author
 
 **Kurnia Aditya Reynaldi**
@@ -205,6 +218,26 @@ Electrical Engineer | Embedded Systems | Control Systems
 
 ## License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+It was originally intended to be MIT-licensed, but because it includes and links against the third-party SSD1306 driver (`ssd1306.c`/`fonts.c`) under GPL v3, the entire combined firmware must also be distributed under GPL v3 terms. Application-specific code written for this project (`main.c`, `main.h`) is authored by Kurnia Aditya Reynaldi and is released as part of this GPL-3.0-licensed project.
 
 See the [LICENSE](LICENSE) file for the complete license text.
+
+```text
+STM32 Water Level Monitoring System
+Copyright (C) 2024  Kurnia Aditya Reynaldi
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+```
