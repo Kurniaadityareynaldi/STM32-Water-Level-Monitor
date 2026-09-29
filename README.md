@@ -201,7 +201,7 @@ Possible improvements include:
 
 ## Third-Party Components
 
-This project uses a modified SSD1306 OLED display driver (`Drivers/SSD1306/ssd1306.c`, `ssd1306.h`, `fonts.c`, `fonts.h`) originally written by:
+This project uses a modified SSD1306 OLED display driver (`Drivers/SSD1306/ssd1306.c`, `ssd1306.h`, `fonts.c`, `fonts.h`) and also  originally written by:
 
 * **Tilen Majerle** ([tilen@majerle.eu](mailto:tilen@majerle.eu)) — original author
 * **Alexander Lutsai** ([s.lyra@ya.ru](mailto:s.lyra@ya.ru)) — STM32F10x port/modification
