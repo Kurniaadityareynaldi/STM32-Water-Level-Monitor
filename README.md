@@ -184,7 +184,9 @@ Because this driver is compiled together with the rest of the firmware into a si
 
 **Kurnia Aditya Reynaldi**
 
-Electrical Engineer | Embedded Systems | Control Systems
+Electrical Engineer | Embedded Systems | Control Systems | Electronics R&D
+
+Contributions, issues, and pull requests are welcome.
 
 ## License
 
