@@ -130,36 +130,6 @@ The displayed percentage is categorized into level thresholds such as:
 * 75%
 * 100%
 
-## Project Structure
-
-A recommended repository structure is:
-
-```text
-stm32-water-level-monitor/
-│
-├── Core/
-│   ├── Inc/
-│   │   └── main.h
-│   │
-│   └── Src/
-│       └── main.c
-│
-├── Drivers/
-│   └── SSD1306/
-│       ├── ssd1306.c
-│       ├── ssd1306.h
-│       ├── fonts.c
-│       └── fonts.h
-│
-├── stm32-water-level-monitor.ioc
-│
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
-> The exact folder structure may vary depending on the STM32CubeIDE project configuration.
-
 ## Development Environment
 
 * **IDE:** STM32CubeIDE
